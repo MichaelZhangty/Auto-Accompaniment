@@ -1,6 +1,7 @@
 # Auto-Accompaniment
 File:
      score_following_onset_diff_old.py
+#
 Function:
      It compares audio.wav with midi.mid to follow the position of the singers' singing.
      It generate time list according to each beat in file time_beat_file.txt
