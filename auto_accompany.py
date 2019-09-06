@@ -37,9 +37,14 @@ import scipy.stats
 import os
 import statsmodels.api as sm
 
+
+
+# name of the song!!!
+name = "1"
+
+
 # file is for no gap
 # file1 is for with gap
-name = "3"
 time_beat_file = 'time_beat_file{}.txt'.format(name)
 confidence_file = 'confidence_queue_file{}.txt'.format(name)
 ACC_FILE = 'midi{}.mid'.format(name)
@@ -281,11 +286,11 @@ def compute_tempo_ratio_weighted(b0, t0, s0, l):
     # print "after weight"
     # # # print confidence_count
     # true weighted
-    print "------------------------------x timeQueue y range-----------------------"
-    print x
-    print y
-    print "----------------------------confidence_block"
-    print confidence_block
+    # print "------------------------------x timeQueue y range-----------------------"
+    # print x
+    # print y
+    # print "----------------------------confidence_block"
+    # print confidence_block
     x = sm.add_constant(x)
     if y[0] == 0:
         print "first one -------------------------------------"
@@ -463,7 +468,7 @@ class Player:
         # print(tap_beat)
 
         new_midi.instruments.append(piano)
-        new_midi.write("new_acc.mid")
+        new_midi.write("auto_accompany.mid")
 
         plt.scatter(x=self.playTimes, y=self.noteTimes, c='b', s=10, marker='o')
         plt.plot(tap_time, tap_beat, marker='+')

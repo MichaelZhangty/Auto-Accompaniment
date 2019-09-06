@@ -42,8 +42,12 @@ FILTER = 'gate'
 # TEMPO_FILE = os.path.join(DIRECTORY,'tempo.txt')
 # Rc =  int(open(TEMPO_FILE, "r").readline().strip('\n'))
 
-# to replace
+# name of the song
+# audio{}
+# midi{}
 name = "3"
+
+
 
 # AUDIOFILE = os.path.join(DIRECTORY,'audio.wav')
 # MIDIFILE = os.path.join(DIRECTORY,'midi.mid')
